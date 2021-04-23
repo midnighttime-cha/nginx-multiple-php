@@ -62,7 +62,9 @@ ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
 fe00::905a:faff:faa2:20c7
 ```
 จากนั้นให้ทดสอบการทำงานของ NGINX เปิด URL: http://99.38.118.190
+
 ![NGINX Wellcome](https://storage.kaikannook.com/image/showimage/common/blog/be384df195c3258cb34e1010b2051faeb0.png)
+
 ถ้าขึ้นหน้าต่างแบบนี้ถือว่าการติดตั้ง NGINX เสร็จสมบูรณ์
 
 ## ติดตั้ง PHP หลาย version
@@ -165,6 +167,7 @@ nano /var/www/your_domain/info.php
 phpinfo();
 ```
 ทดสอบด้วย URL: `http://99.38.118.190/info.php` ระบบจะแสดงผลดังต่อไปนี้
+
 ![PHP Info](https://storage.kaikannook.com/image/showimage/common/blog/ddcc10a672fce76c09218f6579882f47d.jpeg)
 
 
