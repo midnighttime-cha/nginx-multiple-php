@@ -63,6 +63,110 @@ fe00::905a:faff:faa2:20c7
 ```
 จากนั้นให้ทดสอบการทำงานของ NGINX เปิด URL: http://99.38.118.190
 ![NGINX Wellcome](https://storage.kaikannook.com/image/showimage/common/blog/be384df195c3258cb34e1010b2051faeb0.png)
+ถ้าขึ้นหน้าต่างแบบนี้ถือว่าการติดตั้ง NGINX เสร็จสมบูรณ์
+
+## ติดตั้ง PHP หลาย version
+เช่นเคยให้ทำการอัพเดท ubuntu กันก่อน
+```bash
+sudo apt update
+```
+จากนั้นตั้งค่า Repository ของ PHP กันครับด้วยคำสั่ง
+```bash
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php && sudo apt update
+```
+จากนั้นติดตั้ง PHP กันได้เลย เริ่มจาก 5.6 ถึง 7.4 กันเลย
+```bash
+sudo apt install -y php5.6 php5.6-fpm
+sudo apt install -y php7.0 php7.0-fpm
+sudo apt install -y php7.1 php7.1-fpm
+sudo apt install -y php7.2 php7.2-fpm
+sudo apt install -y php7.4 php7.4-fpm
+```
+เมื่อติดตั้งเสร็จไฟล์ php socket จะรวมไว้ใน Folder `/var/run/php/`
+```bash
+ls /var/run/php/
+```
+ผลลัพธ์
+```
+total 8
+-rw-r--r-- 1 root     root     4 Feb 17 16:50 php5.6-fpm.pid
+srw-rw---- 1 www-data www-data 0 Feb 17 16:50 php5.6-fpm.sock
+-rw-r--r-- 1 root     root     5 Feb 17 16:51 php7.4-fpm.pid
+srw-rw---- 1 www-data www-data 0 Feb 17 16:51 php7.4-fpm.sock
+```
+### ติดตั้ง PHP Extension
+กรณีต้องใช้ `extension` อื่นต้องใช้คำสั่งต่อไปนี้
+```bash
+sudo apt install php5.6-mysql # mysql extension
+sudo apt install php7.x-mysql # mysql extension ของ php7.xxx version ต่างๆ
+```
+
+## ตั้งค่า NGINX ให้ใช้งานกับ PHP ได้แต่ละ Version
+สร้าง folder เฉพาะของ website ที่คุณต้องการ
+```bash
+sudo mkdir /var/www/your_domain
+```
+ทำการตั้งค่าสิทธิ์การเข้าถึงให้ folder ที่เราสร้างขึ้นมา
+```bash
+sudo chown -R $USER:$USER /var/www/your_domain
+```
+สร้างไฟล์ตั้งค่าของ website ของคุณ
+```bash
+sudo nano /etc/nginx/sites-available/your_domain.conf
+```
+ทำการตั้งค่า php socket ตาม version ที่คุณต้องการ โดยไฟล์ socket จะเก็บใน `/var/run/php/` สามารถตั้งค่าตามตัวอย่างด้านล่าง
+```
+# Fiile: /etc/nginx/sites-available/your_domain.conf
+
+server {
+    listen 80;
+    server_name your_domain www.your_domain;
+    root /var/www/your_domain;
+
+    index index.html index.htm index.php;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock; # ตั้งค่า php socket ตาม version ที่คุณต้องการ
+     }
+
+    location ~ /\.ht {
+        deny all;
+    }
+
+}
+```
+ทำการสร้าง shortcut link ไว้ใน `/etc/nginx/sites-enabled/` ด้วยคำสั่ง
+```bash
+sudo ln -s /etc/nginx/sites-available/your_domain.conf /etc/nginx/sites-enabled/
+```
+ตรวจสอบความถูกต้องของการตั้งค่า NGINX
+```bash
+sudo nginx -t
+```
+ทำการ Restart service ของ NGINX
+```bash
+sudo systemctl reload nginx
+```
+ทดสอบการทำงานของ PHP ด้วย
+```bash
+nano /var/www/your_domain/info.php
+```
+ผลลัพธ์
+```
+## File: /var/www/your_domain/info.php
+
+<?php
+phpinfo();
+```
+ทดสอบด้วย URL: `http://99.38.118.190/info.php` ระบบจะแสดงผลดังต่อไปนี้
+![PHP Info](https://storage.kaikannook.com/image/showimage/common/blog/c11bb2462c9e06b85cbb3b8a97bd46710.png)
+
 
 
 
