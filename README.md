@@ -1,4 +1,4 @@
-# วิธีติดตั้ง PHP หลาย Version และ NGINX บน Ubuntu 20.04
+# วิธีติดตั้ง PHP หลาย Version ให้ใช้งานกับ NGINX บน Ubuntu 20.04
 ความรู้ความเข้าใจพื้นฐาน
 - สามารถใช้งาน Linux command line ได้
 - สามารถตั้งค่า NGINX ขั้นพื้นฐานได้
