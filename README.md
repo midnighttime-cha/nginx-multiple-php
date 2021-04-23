@@ -165,7 +165,7 @@ nano /var/www/your_domain/info.php
 phpinfo();
 ```
 ทดสอบด้วย URL: `http://99.38.118.190/info.php` ระบบจะแสดงผลดังต่อไปนี้
-![PHP Info](https://storage.kaikannook.com/image/showimage/common/blog/c11bb2462c9e06b85cbb3b8a97bd46710.png)
+![PHP Info](https://storage.kaikannook.com/image/showimage/common/blog/ddcc10a672fce76c09218f6579882f47d.jpeg)
 
 
 
