@@ -3,7 +3,7 @@
 - สามารถใช้งาน Linux command line ได้
 - สามารถตั้งค่า NGINX ขั้นพื้นฐานได้
 
-## ติดตั้ง NGINX
+## 1. ติดตั้ง NGINX
 ทำการอัพเทเวอร์ชั่นของ Ubuntu และติดตั้ง NGINX ได้เลย
 ```bash
 sudo apt update
@@ -67,7 +67,7 @@ fe00::905a:faff:faa2:20c7
 
 ถ้าขึ้นหน้าต่างแบบนี้ถือว่าการติดตั้ง NGINX เสร็จสมบูรณ์
 
-## ติดตั้ง PHP หลาย version
+## 2. ติดตั้ง PHP หลาย version
 เช่นเคยให้ทำการอัพเดท ubuntu กันก่อน
 ```bash
 sudo apt update
@@ -104,7 +104,7 @@ sudo apt install php5.6-mysql # mysql extension
 sudo apt install php7.x-mysql # mysql extension ของ php7.xxx version ต่างๆ
 ```
 
-## ตั้งค่า NGINX ให้ใช้งานกับ PHP ได้แต่ละ Version
+## 3. ตั้งค่า NGINX ให้ใช้งานกับ PHP ได้แต่ละ Version
 สร้าง folder เฉพาะของ website ที่คุณต้องการ
 ```bash
 sudo mkdir /var/www/your_domain
