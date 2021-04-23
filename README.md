@@ -171,5 +171,7 @@ phpinfo();
 ![PHP Info](https://storage.kaikannook.com/image/showimage/common/blog/ddcc10a672fce76c09218f6579882f47d.jpeg)
 
 
-
+## ที่มาของแหล่งความรู้และข้อมูล
+- [How to Run Multiple PHP Versions with Apache on Ubuntu 20.04 / 18.04 / 16.04](https://devanswers.co/run-multiple-php-versions-on-apache/)
+- [How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04)
 
