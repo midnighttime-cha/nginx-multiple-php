@@ -26,9 +26,9 @@ Available applications:
 sudo ufw allow 'Nginx Full'
 sudo ufw allow 'Nginx HTTP'
 sudo ufw allow 'Nginx HTTPS'
-sudo ufw allow 'Nginx OpenSSH'
+sudo ufw allow 'OpenSSH'
 ```
-ตรวจสอบว่า application ที่เราทำการ allow ไว้ด้วยคำสั่ง
+อย่าลืม Allow OpenSSH ด้วยนะจ๊ะเดี่ยวจะ Remote ไม่ได้ถ้าเราเปิดใช้งาน Firewall ตรวจสอบว่า application ที่เราทำการ allow ไว้ด้วยคำสั่ง
 ```bash
 sudo ufw status
 ```
