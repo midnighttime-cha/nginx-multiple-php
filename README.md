@@ -102,6 +102,40 @@ srw-rw---- 1 www-data www-data 0 Feb 17 16:51 php7.4-fpm.sock
 ```bash
 sudo apt install php5.6-mysql # mysql extension
 sudo apt install php7.x-mysql # mysql extension ของ php7.xxx version ต่างๆ
+
+#Install basic extension.
+sudo apt install -y php7.1-mysql
+sudo apt install -y php7.1-bcmath
+sudo apt install -y php7.1-dom
+sudo apt install -y php7.1-fileinfo
+sudo apt install -y php7.1-gd
+sudo apt install -y php7.1-imagick
+sudo apt install -y php7.1-imap
+sudo apt install -y php7.1-intl
+sudo apt install -y php7.1-ioncube_loader
+sudo apt install -y php7.1-json
+sudo apt install -y php7.1-mbstring
+sudo apt install -y php7.1-mcrypt
+sudo apt install -y php7.1-mysqli
+sudo apt install -y php7.1-mysqlnd
+sudo apt install -y php7.1-nd_mysqli
+sudo apt install -y php7.1-nd_pdo_mysql
+sudo apt install -y php7.1-opcache
+sudo apt install -y php7.1-pdo
+sudo apt install -y php7.1-pdo_mysql
+sudo apt install -y php7.1-pdo_sqlite
+sudo apt install -y php7.1-phalcon3
+sudo apt install -y php7.1-posix
+sudo apt install -y php7.1-soap
+sudo apt install -y php7.1-sockets
+sudo apt install -y php7.1-tidy
+sudo apt install -y php7.1-timezonedb
+sudo apt install -y php7.1-wddx
+sudo apt install -y php7.1-xmlreader
+sudo apt install -y php7.1-xmlrpc
+sudo apt install -y php7.1-xmlwriter
+sudo apt install -y php7.1-xsl
+sudo apt install -y php7.1-zip
 ```
 
 ## 3. ตั้งค่า NGINX ให้ใช้งานกับ PHP ได้แต่ละ Version
