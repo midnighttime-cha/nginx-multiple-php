@@ -109,6 +109,7 @@ sudo apt install -y php7.1-bcmath
 sudo apt install -y php7.1-dom
 sudo apt install -y php7.1-fileinfo
 sudo apt install -y php7.1-gd
+sudo apt install -y libgd-dev
 sudo apt install -y php7.1-imagick
 sudo apt install -y php7.1-imap
 sudo apt install -y php7.1-intl
