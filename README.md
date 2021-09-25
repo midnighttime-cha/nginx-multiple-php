@@ -104,39 +104,20 @@ sudo apt install php5.6-mysql # mysql extension
 sudo apt install php7.x-mysql # mysql extension ของ php7.xxx version ต่างๆ
 
 #Install basic extension.
-sudo apt install -y php7.1-mysql
-sudo apt install -y php7.1-bcmath
-sudo apt install -y php7.1-dom
-sudo apt install -y php7.1-fileinfo
-sudo apt install -y php7.1-gd
-sudo apt install -y libgd-dev
-sudo apt install -y php7.1-imagick
-sudo apt install -y php7.1-imap
-sudo apt install -y php7.1-intl
-sudo apt install -y php7.1-ioncube_loader
-sudo apt install -y php7.1-json
-sudo apt install -y php7.1-mbstring
-sudo apt install -y php7.1-mcrypt
-sudo apt install -y php7.1-mysqli
-sudo apt install -y php7.1-mysqlnd
-sudo apt install -y php7.1-nd_mysqli
-sudo apt install -y php7.1-nd_pdo_mysql
-sudo apt install -y php7.1-opcache
-sudo apt install -y php7.1-pdo
-sudo apt install -y php7.1-pdo_mysql
-sudo apt install -y php7.1-pdo_sqlite
-sudo apt install -y php7.1-phalcon3
-sudo apt install -y php7.1-posix
-sudo apt install -y php7.1-soap
-sudo apt install -y php7.1-sockets
-sudo apt install -y php7.1-tidy
-sudo apt install -y php7.1-timezonedb
-sudo apt install -y php7.1-wddx
-sudo apt install -y php7.1-xmlreader
-sudo apt install -y php7.1-xmlrpc
-sudo apt install -y php7.1-xmlwriter
-sudo apt install -y php7.1-xsl
-sudo apt install -y php7.1-zip
+
+# php5.6
+sudo apt install php5.6-mysql php5.6-curl php5.6-gd php5.6-intl \
+  php-pear php-imagick php5.6-imap php5.6-mcrypt php5.6-memcache  \
+  php5.6-pspell php5.6-recode php5.6-sqlite3 php5.6-tidy \
+  php5.6-xmlrpc php5.6-xsl php5.6-mbstring php5.6-gettext
+
+# php7.1
+sudo apt install -y php7.1-mysql php7.1-bcmath php7.1-dom php7.1-fileinfo \
+  php7.1-gd libgd-dev php7.1-imagick php7.1-imap php7.1-intl php7.1-ioncube_loader \
+  php7.1-json php7.1-mbstring php7.1-mcrypt php7.1-mysqli php7.1-mysqlnd php7.1-nd_mysqli \
+  php7.1-nd_pdo_mysql php7.1-opcache php7.1-pdo php7.1-pdo_mysql php7.1-pdo_sqlite \
+  php7.1-phalcon3 php7.1-posix php7.1-soap php7.1-sockets php7.1-tidy php7.1-timezonedb \
+  php7.1-wddx php7.1-xmlreader php7.1-xmlrpc php7.1-xmlwriter php7.1-xsl php7.1-zip
 ```
 
 ## 3. ตั้งค่า NGINX ให้ใช้งานกับ PHP ได้แต่ละ Version
