@@ -106,13 +106,13 @@ sudo apt install php7.x-mysql # mysql extension ของ php7.xxx version ต�
 #Install basic extension.
 
 # php5.6
-sudo apt install php5.6-mysql php5.6-curl php5.6-gd php5.6-intl \
+sudo apt -y install php5.6-mysql php5.6-curl php5.6-gd php5.6-intl \
   php-pear php-imagick php5.6-imap php5.6-mcrypt php5.6-memcache  \
   php5.6-pspell php5.6-recode php5.6-sqlite3 php5.6-tidy \
   php5.6-xmlrpc php5.6-xsl php5.6-mbstring php5.6-gettext
 
 # php7.1
-sudo apt install -y php7.1-mysql php7.1-bcmath php7.1-dom php7.1-fileinfo \
+sudo apt -y install -y php7.1-mysql php7.1-bcmath php7.1-dom php7.1-fileinfo \
   php7.1-gd libgd-dev php7.1-imagick php7.1-imap php7.1-intl php7.1-ioncube_loader \
   php7.1-json php7.1-mbstring php7.1-mcrypt php7.1-mysqli php7.1-mysqlnd php7.1-nd_mysqli \
   php7.1-nd_pdo_mysql php7.1-opcache php7.1-pdo php7.1-pdo_mysql php7.1-pdo_sqlite \
