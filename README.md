@@ -194,7 +194,7 @@ sudo systemctl reload nginx
 ```
 
 ### ตรวจสอบ PHP Extension
-สามารถใช้ php --ri [ชื่อ Extension] ตามตัวอย่าง
+สามารถใช้ `php --ri [ชื่อ Extension]` ตามตัวอย่าง
 ```bash
 php --ri mcrypt
 ```
