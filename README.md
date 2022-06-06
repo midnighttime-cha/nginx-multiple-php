@@ -137,25 +137,25 @@ sudo nano /etc/nginx/sites-available/your_domain.conf
 # Fiile: /etc/nginx/sites-available/your_domain.conf
 
 server {
-    listen 80;
-    server_name your_domain www.your_domain;
-    root /var/www/your_domain;
+  listen 80;
+  server_name www.mywebsite.com subdomain.mywebsite.com;
+  client_max_body_size 100M;
 
-    index index.html index.htm index.php;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
+  location / {
+    root /var/www/mywebsite;
+    index index.php;
+    try_files $uri $uri/ /index.php;
 
     location ~ \.php$ {
-        include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock; # ตั้งค่า php socket ตาม version ที่คุณต้องการ
-     }
-
-    location ~ /\.ht {
-        deny all;
+      include snippets/fastcgi-php.conf;
+      fastcgi_pass unix:/var/run/php/php7.1-fpm.sock;
+      fastcgi_param SCRIPT_FILENAME $document_root/index.php;
     }
 
+    location ~ /\.ht {
+      deny all;
+    }
+  }
 }
 ```
 ทำการสร้าง shortcut link ไว้ใน `/etc/nginx/sites-enabled/` ด้วยคำสั่ง
