@@ -192,6 +192,13 @@ sudo nginx -t
 ```bash
 sudo systemctl reload nginx
 ```
+
+### ตรวจสอบ PHP Extension
+```bash
+php --ri oci8
+```
+หรือ
+
 ทดสอบการทำงานของ PHP ด้วย
 ```bash
 nano /var/www/your_domain/info.php
