@@ -84,6 +84,7 @@ sudo apt install -y php7.0 php7.0-fpm
 sudo apt install -y php7.1 php7.1-fpm
 sudo apt install -y php7.2 php7.2-fpm
 sudo apt install -y php7.4 php7.4-fpm
+sudo apt install -y php8.1 php8.1-fpm
 ```
 เมื่อติดตั้งเสร็จไฟล์ php socket จะรวมไว้ใน Folder `/var/run/php/`
 ```bash
