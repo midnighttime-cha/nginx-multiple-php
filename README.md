@@ -136,7 +136,7 @@ sudo apt -y install php7.4-mysql php7.4-bcmath \
 # php8.1
 sudo apt -y install php8.1-mysql php8.1-bcmath \
   php8.1-gd libgd-dev php8.1-imagick php7.4-imap \
-  php8.1-intl php8.1-json php8.1-mbstring php8.1-mcrypt \
+  php8.1-intl php8.1-mbstring php8.1-mcrypt \
   php8.1-opcache php8.1-common php8.1-soap \
   php8.1-tidy php8.1-xml php8.1-xmlrpc php8.1-xsl php8.1-zip
 ```
