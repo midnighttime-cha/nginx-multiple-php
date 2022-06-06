@@ -129,7 +129,7 @@ sudo apt -y install php7.2-mysql php7.2-bcmath \
 sudo apt -y install php7.4-mysql php7.4-bcmath \
   php7.4-gd libgd-dev php7.4-imagick php7.4-imap \
   php7.4-intl php7.4-json php7.4-mbstring php7.4-mcrypt \
-  php7.4-opcache php7.4-common php7.4-phalcon3 php7.4-soap \
+  php7.4-opcache php7.4-common php7.4-soap \
   php7.4-tidy php7.4-xml php7.4-xmlrpc php7.4-xsl php7.4-zip
 ```
 
