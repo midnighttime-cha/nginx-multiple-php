@@ -112,12 +112,11 @@ sudo apt -y install php5.6-mysql php5.6-curl php5.6-gd php5.6-intl \
   php5.6-xmlrpc php5.6-xsl php5.6-mbstring php5.6-gettext
 
 # php7.1
-sudo apt -y install php7.1-mysql php7.1-mysqli php7.1-mysqlnd php7.1-bcmath \
-  php7.1-gd libgd-dev php7.1-imagick php7.1-imap php7.1-intl php7.1-ioncube_loader \
-  php7.1-json php7.1-mbstring php7.1-mcrypt php7.1-nd_mysqli \
-  php7.1-nd_pdo_mysql php7.1-opcache php7.1-common php7.1-fileinfo php7.1-pdo php7.1-pdo_mysql \
-  php7.1-pdo_sqlite php7.1-phalcon3 php7.1-posix php7.1-soap php7.1-sockets php7.1-tidy php7.1-timezonedb \
-  php7.1-wddx php7.1-xml php7.1-xmlreader php7.1-xmlrpc php7.1-xmlwriter php7.1-dom php7.1-xsl php7.1-zip
+sudo apt -y install php7.1-mysql php7.1-bcmath \
+  php7.1-gd libgd-dev php7.1-imagick php7.1-imap \
+  php7.1-intl php7.1-json php7.1-mbstring php7.1-mcrypt \
+  php7.1-opcache php7.1-common php7.1-phalcon3 php7.1-soap \
+  php7.1-tidy php7.1-xml php7.1-xmlrpc php7.1-xsl php7.1-zip
 ```
 
 ## 3. ตั้งค่า NGINX ให้ใช้งานกับ PHP ได้แต่ละ Version
