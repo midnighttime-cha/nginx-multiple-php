@@ -112,7 +112,7 @@ sudo apt -y install php5.6-mysql php5.6-curl php5.6-gd php5.6-intl \
   php5.6-xmlrpc php5.6-xsl php5.6-mbstring php5.6-gettext
 
 # php7.1
-sudo apt -y install -y php7.1-mysql php7.1-bcmath php7.1-dom php7.1-fileinfo \
+sudo apt -y install php7.1-mysql php7.1-bcmath php7.1-dom php7.1-fileinfo \
   php7.1-gd libgd-dev php7.1-imagick php7.1-imap php7.1-intl php7.1-ioncube_loader \
   php7.1-json php7.1-mbstring php7.1-mcrypt php7.1-mysqli php7.1-mysqlnd php7.1-nd_mysqli \
   php7.1-nd_pdo_mysql php7.1-opcache php7.1-pdo php7.1-pdo_mysql php7.1-pdo_sqlite \
