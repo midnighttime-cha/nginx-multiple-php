@@ -7,7 +7,7 @@
 ทำการอัพเทเวอร์ชั่นของ Ubuntu และติดตั้ง NGINX ได้เลย
 ```bash
 sudo apt update
-sudo apt install nginx
+sudo apt -y install nginx
 ```
 จากนั้นทำการตรวจสอบรายการ Application ใน Firewall ด้วย
 ```bash
