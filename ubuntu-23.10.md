@@ -103,37 +103,46 @@ srw-rw---- 1 www-data www-data 0 Feb 17 16:51 php7.4-fpm.sock
 ```bash
 sudo apt install php5.6-mysql # mysql extension
 sudo apt install php7.x-mysql # mysql extension ของ php7.xxx version ต่างๆ
+```
 
-#Install basic extension.
-
+# Install basic extension.
 # php5.6
+```
 sudo apt -y install php5.6-mysql php5.6-curl php5.6-gd php5.6-intl \
   php-pear php-imagick php5.6-imap php5.6-mcrypt php5.6-memcache  \
   php5.6-pspell php5.6-recode php5.6-sqlite3 php5.6-tidy \
   php5.6-xmlrpc php5.6-xsl php5.6-mbstring php5.6-gettext php5.6-curl
+```
 
 # php7.1
+```
 sudo apt -y install php7.1-mysql php7.1-bcmath \
   php7.1-gd  php7.1-imagick php7.1-imap \
   php7.1-intl php7.1-json php7.1-mbstring php7.1-mcrypt \
   php7.1-opcache php7.1-common php7.1-phalcon3 php7.1-soap \
   php7.1-tidy php7.1-xml php7.1-xmlrpc php7.1-xsl php7.1-zip php7.1-curl
-  
+ ```
+
 # php7.2
+```
 sudo apt -y install php7.2-mysql php7.2-bcmath \
   php7.2-gd  php7.2-imagick php7.2-imap \
   php7.2-intl php7.2-json php7.2-mbstring php7.2-mcrypt \
   php7.2-opcache php7.2-common php7.2-phalcon3 php7.2-soap \
   php7.2-tidy php7.2-xml php7.2-xmlrpc php7.2-xsl php7.2-zip php7.2-curl
+```
   
 # php7.4
+```
 sudo apt -y install php7.4-mysql php7.4-bcmath \
   php7.4-gd  php7.4-imagick php7.4-imap \
   php7.4-intl php7.4-json php7.4-mbstring php7.4-mcrypt \
   php7.4-opcache php7.4-common php7.4-soap \
   php7.4-tidy php7.4-xml php7.4-xmlrpc php7.4-xsl php7.4-zip php7.4-curl
+```
 
 # php8.1
+```
 sudo apt -y install php8.1-mysql php8.1-bcmath \
   php8.1-gd  php8.1-imagick php7.4-imap \
   php8.1-intl php8.1-mbstring php8.1-mcrypt \
