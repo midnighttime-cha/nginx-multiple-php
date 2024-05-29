@@ -118,7 +118,7 @@ sudo apt -y install php5.6-mysql php5.6-curl php5.6-gd php5.6-intl \
 ```
 sudo apt -y install php7.1-mysql php7.1-bcmath \
   php7.1-gd  php7.1-imagick php7.1-imap \
-  php7.1-intl php7.1-json php7.1-mbstring php7.1-mcrypt \
+  php7.1-json php7.1-mbstring php7.1-mcrypt \
   php7.1-opcache php7.1-common php7.1-phalcon3 php7.1-soap \
   php7.1-tidy php7.1-xml php7.1-xmlrpc php7.1-xsl php7.1-zip php7.1-curl
  ```
@@ -127,7 +127,7 @@ sudo apt -y install php7.1-mysql php7.1-bcmath \
 ```
 sudo apt -y install php7.2-mysql php7.2-bcmath \
   php7.2-gd  php7.2-imagick php7.2-imap \
-  php7.2-intl php7.2-json php7.2-mbstring php7.2-mcrypt \
+  php7.2-json php7.2-mbstring php7.2-mcrypt \
   php7.2-opcache php7.2-common php7.2-phalcon3 php7.2-soap \
   php7.2-tidy php7.2-xml php7.2-xmlrpc php7.2-xsl php7.2-zip php7.2-curl
 ```
@@ -136,7 +136,7 @@ sudo apt -y install php7.2-mysql php7.2-bcmath \
 ```
 sudo apt -y install php7.4-mysql php7.4-bcmath \
   php7.4-gd  php7.4-imagick php7.4-imap \
-  php7.4-intl php7.4-json php7.4-mbstring php7.4-mcrypt \
+  php7.4-json php7.4-mbstring php7.4-mcrypt \
   php7.4-opcache php7.4-common php7.4-soap \
   php7.4-tidy php7.4-xml php7.4-xmlrpc php7.4-xsl php7.4-zip php7.4-curl
 ```
@@ -144,10 +144,19 @@ sudo apt -y install php7.4-mysql php7.4-bcmath \
 # php8.1
 ```
 sudo apt -y install php8.1-mysql php8.1-bcmath \
-  php8.1-gd  php8.1-imagick php7.4-imap \
-  php8.1-intl php8.1-mbstring php8.1-mcrypt \
+  php8.1-gd  php8.1-imagick php8.1-imap \
+  php8.1-mbstring php8.1-mcrypt \
   php8.1-opcache php8.1-common php8.1-soap \
   php8.1-tidy php8.1-xml php8.1-xmlrpc php8.1-xsl php8.1-zip php8.1-curl
+```
+
+# php8.3
+```
+sudo apt -y install php8.1-mysql php8.3-bcmath \
+  php8.3-gd  php8.3-imagick php8.3-imap \
+  php8.3-mbstring php8.3-mcrypt \
+  php8.3-opcache php8.3-common php8.1-soap \
+  php8.3-tidy php8.3-xml php8.3-xmlrpc php8.3-xsl php8.3-zip php8.3-curl
 ```
 
 ## 3. ตั้งค่า NGINX ให้ใช้งานกับ PHP ได้แต่ละ Version
