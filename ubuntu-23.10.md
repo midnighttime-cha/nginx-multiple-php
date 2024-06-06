@@ -151,8 +151,7 @@ apt -y install php8.1-mysql php8.1-bcmath \
 ```
 # php8.2
 ```
-apt -y install php8.2-mysql php8.2-bcmath \
-  php8.2-gd  php8.2-imagick php8.2-imap \
+apt -y install php8.2-mysql php8.2-bcmath php8.2-gd php8.2-imap \
   php8.2-mbstring php8.2-mcrypt \
   php8.2-opcache php8.2-common php8.1-soap \
   php8.2-tidy php8.2-xml php8.2-xmlrpc php8.2-xsl php8.2-zip php8.2-curl
