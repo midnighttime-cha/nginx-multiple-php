@@ -163,7 +163,7 @@ apt -y install php8.3-mysql php8.3-bcmath \
   php8.3-gd libgd-dev php8.3-imagick php8.3-imap \
   php8.3-intl php8.3-mbstring php8.3-mcrypt \
   php8.3-opcache php8.3-common php8.3-soap \
-  php8.3-tidy php8.3-xml php8.3-xmlrpc php8.3-xsl php8.3-zip php8.3-curl
+  php8.3-tidy php8.3-xml php8.3-xmlrpc php8.3-xsl php8.3-zip php8.3-curl php8.3-dev php-pear
 ```
 
 ## 3. ตั้งค่า NGINX ให้ใช้งานกับ PHP ได้แต่ละ Version
