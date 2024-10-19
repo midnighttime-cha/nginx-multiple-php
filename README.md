@@ -93,6 +93,7 @@ apt install -y php7.0 php7.0-fpm
 apt install -y php7.1 php7.1-fpm
 apt install -y php7.2 php7.2-fpm
 apt install -y php7.4 php7.4-fpm
+apt install -y php8.0 php8.0-fpm
 apt install -y php8.1 php8.1-fpm
 apt install -y php8.2 php8.2-fpm
 apt install -y php8.3 php8.3-fpm
