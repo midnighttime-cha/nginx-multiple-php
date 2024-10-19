@@ -148,6 +148,14 @@ apt -y install php7.4-mysql php7.4-bcmath \
   php7.4-tidy php7.4-xml php7.4-xmlrpc php7.4-xsl \
   php7.4-zip php7.4-curl php7.4-dev php-pear
 
+# php8.0
+apt -y install php8.0-mysql php8.0-bcmath \
+  php8.0-gd libgd-dev php8.0-imagick php8.0-imap \
+  php8.0-intl php8.0-mbstring php8.0-mcrypt \
+  php8.0-opcache php8.0-common php8.0-soap \
+  php8.0-tidy php8.0-xml php8.0-xmlrpc php8.0-xsl \
+  php8.0-zip php8.0-curl php8.0-dev php-pear
+
 # php8.1
 apt -y install php8.1-mysql php8.1-bcmath \
   php8.1-gd libgd-dev php8.1-imagick php8.1-imap \
