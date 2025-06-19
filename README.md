@@ -207,7 +207,7 @@ server {
   location / {
     root /var/www/mywebsite;
     index index.php;
-    try_files $uri $uri/ /index.php;
+    try_files $uri $uri/ /index.php?$query_string;
 
     location ~ \.php$ {
       include snippets/fastcgi-php.conf;
